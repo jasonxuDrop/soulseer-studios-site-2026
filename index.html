@@ -21,7 +21,6 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f1;
       height: 100%;
     }
     
@@ -43,6 +42,15 @@
         height: auto;
       } 
     }
+    .logo-image {
+      width: 100%;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      .logo-image {
+        content: url("imgs/logo_soulseer_studios_darkmode.png"");
+      }
+    }
   </style>
 </head>
 <body>
@@ -52,7 +60,7 @@
     <div class="col-md-4">
       <div class="row sidenav align-items-center">
         <div class="col-12 align-items-center p-5">
-          <img src="imgs/logo_studio.png" alt="Soulseer Studios Logo" style="width: 100%">
+          <img src="imgs/logo_soulseer_studios.png" alt="Soulseer Studios Logo" class="logo-image">
           <br>
           <br>
           <h3>Subscribe and stay updated!</h3>
